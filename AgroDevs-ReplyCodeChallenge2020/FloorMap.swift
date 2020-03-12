@@ -7,7 +7,13 @@
 //
 
 class FloorMap {
+    var matrix = [[Character]]()
     var developers = [Developer]()
     var managers = [Manager]()
     
+    init(matrix: [[Character]], devList: [Developer], managerList: [Manager]) {
+        self.matrix = matrix
+        self.developers = devList
+        self.managers = managerList
+    }
 }
