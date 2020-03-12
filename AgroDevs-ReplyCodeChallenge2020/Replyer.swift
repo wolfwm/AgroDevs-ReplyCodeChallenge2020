@@ -9,6 +9,7 @@
 class Replyer {
     let company: String
     let bonus: Int
+    var coord: Coord?
     
     init(company: String, bonus: Int) {
         self.company = company

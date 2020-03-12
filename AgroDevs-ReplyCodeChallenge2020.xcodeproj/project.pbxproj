@@ -13,6 +13,7 @@
 		8C1E7A12241AA3F7004E163E /* FloorMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E7A11241AA3F7004E163E /* FloorMap.swift */; };
 		8C1E7A14241AA420004E163E /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E7A13241AA420004E163E /* Manager.swift */; };
 		8C1E7A16241AA44A004E163E /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E7A15241AA44A004E163E /* Calculator.swift */; };
+		8C1E7A18241AA745004E163E /* Coord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E7A17241AA745004E163E /* Coord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		8C1E7A11241AA3F7004E163E /* FloorMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorMap.swift; sourceTree = "<group>"; };
 		8C1E7A13241AA420004E163E /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		8C1E7A15241AA44A004E163E /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		8C1E7A17241AA745004E163E /* Coord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 			children = (
 				79B1880C241A967E0000D8D8 /* main.swift */,
 				8C1E7A0D241AA354004E163E /* Replyer.swift */,
+				8C1E7A17241AA745004E163E /* Coord.swift */,
 				8C1E7A0F241AA397004E163E /* Developer.swift */,
 				8C1E7A11241AA3F7004E163E /* FloorMap.swift */,
 				8C1E7A15241AA44A004E163E /* Calculator.swift */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C1E7A18241AA745004E163E /* Coord.swift in Sources */,
 				8C1E7A10241AA397004E163E /* Developer.swift in Sources */,
 				8C1E7A12241AA3F7004E163E /* FloorMap.swift in Sources */,
 				79B1880D241A967E0000D8D8 /* main.swift in Sources */,
