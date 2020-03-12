@@ -128,7 +128,7 @@ class FloorMap {
         return replyerMatrix
     }
     
-    func calcScore(replyerMatrix: [[Replyer]]) {
+    func calcScore(replyerMatrix: [[Replyer]]) -> Int {
         var thisReplyer = Replyer(company: "placeholder", bonus: 0)
         var wp = 0
         var bp = 0
@@ -137,22 +137,30 @@ class FloorMap {
         
         for i in (0..<replyerMatrix.count) {
             for j in (0..<replyerMatrix[i].count) {
-                wp = 0
-                bp = 0
                 thisReplyer = replyerMatrix[i][j]
                 
                 if let right = replyerMatrix[i][j+1] as Replyer? {
+                    wp = 0
                     if let thisDeveloper = thisReplyer as? Developer, let rightDeveloper = right as? Developer {
                         wp = thisDeveloper.skills.intersection(rightDeveloper.skills).count * (thisDeveloper.skills.union(rightDeveloper.skills).count - thisDeveloper.skills.intersection(rightDeveloper.skills).count)
                     }
+                    bp = thisReplyer.bonus * right.bonus
+                    tp = wp + bp
+                    score += tp
                 }
                 
                 if let down = replyerMatrix[i+1][j] as Replyer? {
+                    wp = 0
                     if let thisDeveloper = thisReplyer as? Developer, let downDeveloper = down as? Developer {
                         wp = thisDeveloper.skills.intersection(downDeveloper.skills).count * (thisDeveloper.skills.union(downDeveloper.skills).count - thisDeveloper.skills.intersection(downDeveloper.skills).count)
                     }
+                    bp = thisReplyer.bonus * down.bonus
+                    tp = wp + bp
+                    score += tp
                 }
             }
         }
+        
+        return score
     }
 }
