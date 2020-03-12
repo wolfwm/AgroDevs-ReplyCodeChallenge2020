@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7997AE57241AAA8D001DF5C0 /* Desk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7997AE56241AAA8D001DF5C0 /* Desk.swift */; };
 		79B1880D241A967E0000D8D8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B1880C241A967E0000D8D8 /* main.swift */; };
 		8C1E7A0E241AA354004E163E /* Replyer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E7A0D241AA354004E163E /* Replyer.swift */; };
 		8C1E7A10241AA397004E163E /* Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E7A0F241AA397004E163E /* Developer.swift */; };
@@ -14,6 +15,7 @@
 		8C1E7A14241AA420004E163E /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E7A13241AA420004E163E /* Manager.swift */; };
 		8C1E7A16241AA44A004E163E /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E7A15241AA44A004E163E /* Calculator.swift */; };
 		8C1E7A18241AA745004E163E /* Coord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E7A17241AA745004E163E /* Coord.swift */; };
+		8C1E7A1B241AA9D7004E163E /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 8C1E7A1A241AA9D7004E163E /* ArgumentParser */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +31,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7997AE56241AAA8D001DF5C0 /* Desk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Desk.swift; sourceTree = "<group>"; };
 		79B18809241A967E0000D8D8 /* AgroDevs-ReplyCodeChallenge2020 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "AgroDevs-ReplyCodeChallenge2020"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79B1880C241A967E0000D8D8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		8C1E7A0D241AA354004E163E /* Replyer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Replyer.swift; sourceTree = "<group>"; };
@@ -44,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C1E7A1B241AA9D7004E163E /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +80,7 @@
 				8C1E7A11241AA3F7004E163E /* FloorMap.swift */,
 				8C1E7A15241AA44A004E163E /* Calculator.swift */,
 				8C1E7A13241AA420004E163E /* Manager.swift */,
+				7997AE56241AAA8D001DF5C0 /* Desk.swift */,
 			);
 			path = "AgroDevs-ReplyCodeChallenge2020";
 			sourceTree = "<group>";
@@ -96,6 +101,9 @@
 			dependencies = (
 			);
 			name = "AgroDevs-ReplyCodeChallenge2020";
+			packageProductDependencies = (
+				8C1E7A1A241AA9D7004E163E /* ArgumentParser */,
+			);
 			productName = "AgroDevs-ReplyCodeChallenge2020";
 			productReference = 79B18809241A967E0000D8D8 /* AgroDevs-ReplyCodeChallenge2020 */;
 			productType = "com.apple.product-type.tool";
@@ -124,6 +132,9 @@
 				Base,
 			);
 			mainGroup = 79B18800241A967E0000D8D8;
+			packageReferences = (
+				8C1E7A19241AA9D7004E163E /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			productRefGroup = 79B1880A241A967E0000D8D8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -142,6 +153,7 @@
 				8C1E7A10241AA397004E163E /* Developer.swift in Sources */,
 				8C1E7A12241AA3F7004E163E /* FloorMap.swift in Sources */,
 				79B1880D241A967E0000D8D8 /* main.swift in Sources */,
+				7997AE57241AAA8D001DF5C0 /* Desk.swift in Sources */,
 				8C1E7A0E241AA354004E163E /* Replyer.swift in Sources */,
 				8C1E7A14241AA420004E163E /* Manager.swift in Sources */,
 				8C1E7A16241AA44A004E163E /* Calculator.swift in Sources */,
@@ -304,6 +316,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8C1E7A19241AA9D7004E163E /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8C1E7A1A241AA9D7004E163E /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C1E7A19241AA9D7004E163E /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 79B18801241A967E0000D8D8 /* Project object */;
 }
