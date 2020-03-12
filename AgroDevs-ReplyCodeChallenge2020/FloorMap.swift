@@ -28,12 +28,12 @@ class FloorMap {
                     case "M":
                         numNeighborManagerDesk += 1
                     default:
-                        return
+                        fatalError("Switch exausted")
                     }
                 }
                 
-                if let up = matrix[i-1][j] as Character? {
-                    switch up {
+                if let down = matrix[i-1][j] as Character? {
+                    switch down {
                     case "#":
                         numNeighborUnavailble += 1
                     case "_":
@@ -41,12 +41,12 @@ class FloorMap {
                     case "M":
                         numNeighborManagerDesk += 1
                     default:
-                        return
+                        fatalError("Switch exausted")
                     }
                 }
                 
-                if let up = matrix[i][j+1] as Character? {
-                    switch up {
+                if let right = matrix[i][j+1] as Character? {
+                    switch right {
                     case "#":
                         numNeighborUnavailble += 1
                     case "_":
@@ -54,12 +54,12 @@ class FloorMap {
                     case "M":
                         numNeighborManagerDesk += 1
                     default:
-                        return
+                        fatalError("Switch exausted")
                     }
                 }
                 
-                if let up = matrix[i][j-1] as Character? {
-                    switch up {
+                if let left = matrix[i][j-1] as Character? {
+                    switch left {
                     case "#":
                         numNeighborUnavailble += 1
                     case "_":
@@ -67,7 +67,7 @@ class FloorMap {
                     case "M":
                         numNeighborManagerDesk += 1
                     default:
-                        return
+                        fatalError("Switch exausted")
                     }
                 }
                 
