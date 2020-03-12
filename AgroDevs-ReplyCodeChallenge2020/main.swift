@@ -6,7 +6,15 @@
 //  Copyright © 2020 AgroDevs. All rights reserved.
 //
 
-import Foundation
+import ArgumentParser
 
-print("Hello, World!")
+struct ReplyChallenge: ParsableCommand {
+    
+    @Argument() var fileURL: String
 
+    func run() throws {
+        print(fileURL + " deu certo.")
+    }
+}
+
+ReplyChallenge.main()

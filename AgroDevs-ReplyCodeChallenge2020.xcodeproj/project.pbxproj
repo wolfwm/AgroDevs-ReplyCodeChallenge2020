@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		8C1E7A14241AA420004E163E /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E7A13241AA420004E163E /* Manager.swift */; };
 		8C1E7A16241AA44A004E163E /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E7A15241AA44A004E163E /* Calculator.swift */; };
 		8C1E7A18241AA745004E163E /* Coord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1E7A17241AA745004E163E /* Coord.swift */; };
+		8C1E7A1B241AA9D7004E163E /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 8C1E7A1A241AA9D7004E163E /* ArgumentParser */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C1E7A1B241AA9D7004E163E /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +98,9 @@
 			dependencies = (
 			);
 			name = "AgroDevs-ReplyCodeChallenge2020";
+			packageProductDependencies = (
+				8C1E7A1A241AA9D7004E163E /* ArgumentParser */,
+			);
 			productName = "AgroDevs-ReplyCodeChallenge2020";
 			productReference = 79B18809241A967E0000D8D8 /* AgroDevs-ReplyCodeChallenge2020 */;
 			productType = "com.apple.product-type.tool";
@@ -124,6 +129,9 @@
 				Base,
 			);
 			mainGroup = 79B18800241A967E0000D8D8;
+			packageReferences = (
+				8C1E7A19241AA9D7004E163E /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			productRefGroup = 79B1880A241A967E0000D8D8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -304,6 +312,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8C1E7A19241AA9D7004E163E /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8C1E7A1A241AA9D7004E163E /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C1E7A19241AA9D7004E163E /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 79B18801241A967E0000D8D8 /* Project object */;
 }
